@@ -1,6 +1,12 @@
 # @aphorica/vuetify-message-box
 
-General messageBox implementation along with helper.
+github: https://aphorica.github.com<br/>
+Web: https://aphorica.com
+
+## Overview
+
+General messageBox implementation along with helper.  Configurable with
+title, message, buttons, checkboxes, and completion action.
 
 Consists of three components:
 

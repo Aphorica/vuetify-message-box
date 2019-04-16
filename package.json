@@ -6,5 +6,9 @@
   "repository": "https://github.com/Aphorica/vuetify-message-box",
   "author": "Rick Berger - Aphorica, Inc. <gbergeraph@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@aphorica/js-utils": "^1.0.0",
+    "@aphorica/vue-event-bus": "^1.0.0"
+  }
 }

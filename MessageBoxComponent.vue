@@ -59,57 +59,12 @@
   {
     mboxHeadline: (required) (the headline text for the box),
     mboxText: (required) (the text for the body of the box - can contain html),
-    info: (optional) (if present contains the following:)
-    {
-      btn1: {
-        text: (the button text),
-        primary: (optional, boolean) (whether the button is highlighted and has focus) ,
-      },
-
-      btn2: {
-        (same members as above)
-      },
-
-      prompts: (optional) [
-        {
-          prompt: (string) - the prompt string,
-          'initial-value': (string) - the initial value of the corresponding field,
-          rules: [ (set of rule functions for the corresponding input field )],
-          modifier: function for the corresponding input field,
-          'setFocus': set this to the initially focused element,
-          'selectAllOnFocus': self explanatory
-        }
-      ] (see notes)
-    
-      doneFn: (optional) a function that will be called when the MessageBox is closed.
-              called with:
-               - btnIX - the button index that was triggered (1-based), and
-               - responses - (if prompts array is present)  responses to the
-                 input fields.
-    
-      returnFocus: (optional) (a dom object to which the focus should be returned
-                    when the MessageBox is closed.)
-    }
+    info: (optional)
   }
 
-  Notes:
-    If a prompts array is present, a number of things happen:
-    
-    - textfields will be displayed with the prompt strings.  Responses will be returned
-      as an array, corresponding to each prompt.
+    See the README.md in the repository for further info
 
-    - rules are of the form: v => (some condition test about v) || 'Field can't be empty'.  A rule
-      returns either 'true' or a string indicating the error.  The string decorates the corresponding
-      input field.
-
-    - If rules are specified and there is a primary button, that button will be disabled until the
-      rules are satisfied.
-
-    - A modifier function accepts the current value and modifies it, if necessary, to
-      fit constraints (such as lower casing everything.)  Modifiers are applied in 'keyup'
-      handler.
-
-    15-Jul-2018 - rickb
+    16-Apr-2019 - rickb
  */
 import MessageBox from './MessageBox';
 import {KeyCodes,JSUtils as AphJSUtils} from '@aphorica/js-utils';

@@ -86,9 +86,10 @@ MessageBox(title, message, &lt;info&gt;)
 args:
 <dl>
 <dt>title</dt>
-<dd>The value to appear in the _v-card-title_ subpanel.</dd>
+<dd>The value to appear in the <em>v-card-title</em> subpanel.
+</dd>
 <dt>message</dt>
-<dd>The value to appear in the _v-card-text_ subpanel.
+<dd>The value to appear in the <em>v-card-text</em> subpanel.
     This can contain html.</dd>
 <dt>info (optional)</dt>
 <dd>Contains information to drive the message box behavior.</dd>

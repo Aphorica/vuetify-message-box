@@ -82,9 +82,19 @@ For example:
 ## Invocation
 
 MessageBox(title, message, &lt;info&gt;)
+
+args:
+<dl>
+<dt>title</dt>
+<dd>The value to appear in the _v-card-title_ subpanel.</dd>
+<dt>message</dt>
+<dd>The value to appear in the _v-card-text_ subpanel.
+    This can contain html.</dd>
+<dt>info (optional)</dt>
+<dd>Contains information to drive the message box behavior.</dd>
+</dl>
  
-The info object is optional &ndash; if present
-it contains the following:
+If present, the _info_ object contains the following:
 ```
 {
   btn1: {

@@ -30,12 +30,12 @@
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn v-if="btn1Text.length > 0" 
-               color="primary" round :flat="!btn1Primary" 
+               color="primary" rounded :text="!btn1Primary" 
                @click.native="btnClick(1)"
                :disabled="btn1Disabled">
           {{btn1Text}}
         </v-btn>
-        <v-btn color="primary" round :flat="!btn2Primary"
+        <v-btn color="primary" rounded :text="!btn2Primary"
                @click.native="btnClick(2)"
                :disabled="btn2Disabled">
           {{btn2Text}}

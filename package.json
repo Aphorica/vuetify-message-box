@@ -1,6 +1,6 @@
 {
   "name": "@aphorica/vuetify-message-box",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "General purpose message box for Vue, based on Vuetify v-dialog component",
   "main": "index.js",
   "repository": "https://github.com/Aphorica/vuetify-message-box",
@@ -9,7 +9,6 @@
   "private": false,
   "dependencies": {
     "@aphorica/js-utils": "^1.0.0",
-    "@aphorica/vue-event-bus": "^1.0.0",
-    "@aphorica/vuetify-message-box": "^1.0.1"
+    "@aphorica/vue-event-bus": "^1.0.0"
   }
 }

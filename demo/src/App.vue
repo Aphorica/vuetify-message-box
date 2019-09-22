@@ -3,23 +3,21 @@
     <MessageBoxComponent v-if="mboxVisible" :show="mboxVisible"
                      :params="mboxParams"
                      @close="mboxClose" />
-    <v-toolbar dark app>
+    <v-app-bar dark app>
       <v-layout row justify-space-around>
-        <v-btn raised round color="info"
+        <v-btn raised rounded color="info"
               @click="basic">Basic</v-btn>
-        <v-btn raised round color="info"
+        <v-btn raised rounded color="info"
               @click="usingDoneFn">done Fn</v-btn>
-        <v-btn raised round color="info"
+        <v-btn raised rounded color="info"
               @click="withYesNoButtons">Yes/No</v-btn>
-        <v-btn raised round color="info"
+        <v-btn raised rounded color="info"
               @click="withPrompts">Prompts</v-btn>
       </v-layout>
-    </v-toolbar>
+    </v-app-bar>
     <v-content>
-      <v-layout class="content-layout" column justify-end>
-        <v-footer dark class="footer">{{output}}</v-footer>
-      </v-layout>
     </v-content>
+    <v-footer dark class="footer" app>{{output}}</v-footer>
   </v-app>
 </template>
 

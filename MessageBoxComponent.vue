@@ -18,7 +18,7 @@
             @focus="(event)=>onPromptFocus(event, prompt)"
             :rules="[v => fieldRules(v, ix)]"
             :value="prompt['initial-value'] || ''"
-            :label="prompt.prompt">
+            :placeholder="prompt.prompt">
           </v-text-field>
 <!--
           <span class="error-field"
@@ -133,7 +133,8 @@ export default {
               input;
           for (nx = 0; nx < inputs.length; ++nx) {
             input = inputs[nx];
-            if (input.attributes['aria-label'].nodeValue === prompt.prompt) {
+            if (input.attributes.placeholder &&
+                input.attributes.placeholder.nodeValue === prompt.prompt) {
               input.focus();
               break;
             }

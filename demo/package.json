@@ -1,6 +1,6 @@
 {
   "name": "demo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,14 +8,14 @@
   },
   "dependencies": {
     "@aphorica/vuetify-message-box": "file:.yalc/@aphorica/vuetify-message-box",
-    "vue": "^2.6.10",
-    "vuetify": "^2.0.18"
+    "vue": "^2.6.11",
+    "vuetify": "^2.2.17"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
-    "sass": "^1.22.12",
-    "vue-cli-plugin-vuetify": "^0.6.3",
-    "vue-template-compiler": "^2.5.21"
+    "@vue/cli-plugin-babel": "^4.2.3",
+    "@vue/cli-service": "^4.2.3",
+    "sass": "^1.26.3",
+    "vue-cli-plugin-vuetify": "^2.0.5",
+    "vue-template-compiler": "^2.6.11"
   }
 }

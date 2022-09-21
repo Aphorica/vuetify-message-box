@@ -9,7 +9,7 @@
   "dependencies": {
     "@aphorica/vuetify-message-box": "file:.yalc/@aphorica/vuetify-message-box",
     "vue": "^2.6.11",
-    "vuetify": "^2.2.17"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.2.3",
